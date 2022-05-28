@@ -3,21 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Přidej pana profesora</title>
+  <meta property="og:url" content="https://tohlesmemy.cz" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tohle s memy: Přidej Karla" />
+  <meta property="og:description" content="Zadavatel a zpracovatel: Tvoje máma" />
+  <meta property="og:image" content="https://tohlesmemy.cz/public/ogimage.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@timichal" />
+  <meta name="twitter:title" content="Tohle s memy: Přidej Karla" />
+  <meta name="twitter:description" content="Zadavatel a zpracovatel: Tvoje máma" />
+  <meta name="twitter:image" content="https://tohlesmemy.cz/public/ogimage.jpg" />
+  <title>Tohle s memy: Přidej Karla</title>
   <link rel="stylesheet" href="https://use.typekit.net/cwa0oqc.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1 class="title">
-    Přidej pana profesora
+    Tohle s memy: Přidej Karla
   </h1>
   <div class="picture-container">
     <canvas id="picture" width="800" height="800"></canvas>
   </div>
   <div class="slider-text">
-    Přesuň pana profesora na správné místo a sliderem mu nastav velikost.
+    Přesuň Karla na správné místo a sliderem mu nastav velikost.
   </div>
   <div class="slider-container">
     <input type="range" min="20" max="200" value="100" class="slider" id="slider">
@@ -37,13 +48,28 @@
     </div>
   </div>
   <div class="button-container">
+    <button id="toggleText" class="toggle-button">
+      Přidat text
+    </button>
+    <div>
+      <input id="customText" placeholder="Vložit vlastní text">
+    </div>
+  </div>
   <a class="save" id="save">Uložit</a>
   <hr class="divider">
+  <div class="contact">
+    <a href="https://twitter.com/timichal" target="_blank" rel="noopener noreferrer">
+      @timichal
+    </a>
+    •
+    <a href="https://github.com/timichal/janeceklol" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
   <div class="bottom-text">
-    Vychází z <a href="https://tohlesmemy.cz/" target="_blank" rel="noopener noreferrer">tohlesmemy.cz
-      generátoru</a>, který vychází z <a href="https://github.com/DonkeyDushan/piratilol" target="_blank" rel="noopener noreferrer">PirStan
-      generátoru</a>.
+    Vychází z <a href="https://github.com/DonkeyDushan/piratilol" target="_blank" rel="noopener noreferrer">PirStan
+      generátoru</a>.<br>
+    Doména tohlesmemy.cz laskavě propůjčena <a href="https://twitter.com/TGuthJarkovsky" target="_blank" rel="noopener noreferrer">T. G. Jarkovským</a>.<br>
+    Pochvaly a stížnosti monetární formou: <br>
+    1016483881/6100
   </div>
   <script src="js/index.js" type="module"></script>
 </body>
