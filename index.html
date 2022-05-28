@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Přidej pana profesora</title>
+  <link rel="stylesheet" href="https://use.typekit.net/cwa0oqc.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="title">
+    Přidej pana profesora
+  </h1>
+  <div class="picture-container">
+    <canvas id="picture" width="800" height="800"></canvas>
+  </div>
+  <div class="slider-text">
+    Přesuň pana profesora na správné místo a sliderem mu nastav velikost.
+  </div>
+  <div class="slider-container">
+    <input type="range" min="20" max="200" value="100" class="slider" id="slider">
+  </div>
+  <div class="button-container">
+    <form action="#" style="display: none;">
+      <input name="custom-image" id="customImage" type="file" accept="image/*" />
+    </form>
+    <button id="customImageBtn">
+      Vložit vlastní obrázek
+    </button>
+
+    <div class="random-button-container">
+      <button id="randomize" class="random-button">
+        Náhodný obrázek
+      </button>
+    </div>
+  </div>
+  <div class="button-container">
+  <a class="save" id="save">Uložit</a>
+  <hr class="divider">
+  </div>
+  <div class="bottom-text">
+    Vychází z <a href="https://tohlesmemy.cz/" target="_blank" rel="noopener noreferrer">tohlesmemy.cz
+      generátoru</a>, který vychází z <a href="https://github.com/DonkeyDushan/piratilol" target="_blank" rel="noopener noreferrer">PirStan
+      generátoru</a>.
+  </div>
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
