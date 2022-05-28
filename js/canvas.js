@@ -1,5 +1,5 @@
 const overlayImage = new Image();
-overlayImage.src = "profesor.png";
+overlayImage.src = "../profesor.png";
 
 const renderCanvas = ({ canvas, state }) => {
   const ctx = canvas.getContext("2d");
